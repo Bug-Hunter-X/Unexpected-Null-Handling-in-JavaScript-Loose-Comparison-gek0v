@@ -1,0 +1,3 @@
+# Unexpected Null Handling in JavaScript Loose Comparison
+
+This repository demonstrates a common error in JavaScript related to loose comparison and null handling. The `foo` function aims to check if either input `a` or `b` is null and return null if so; otherwise, it returns the sum. However, due to loose comparison (`==`), other falsy values like `0`, `false`, or empty strings can also trigger the null return, which may not be intended behavior.  The solution utilizes strict equality (`===`) for accurate null checks. 
